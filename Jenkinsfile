@@ -9,11 +9,15 @@ def sample(){
 
 
 node ('slave') {
-   stage ('test'){
-   print X
-   }
-   stage('code'){
-   print Z
+   if ( X > 10 ) {
+      stage ('test'){
+      print X
+      }
+   }else {
+       stage('code'){
+       print Z
+       sample()
+       }
    }
    stage('compile'){
    sh 'echo y -${Y}'
