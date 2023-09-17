@@ -1,7 +1,14 @@
+def X = 10
+def Z = 20
+env.Y = 30
+def sample(){
+   print "XYZ function"
+}
+
+
+
+
 node ('slave') {
-   def X = 10
-   def Z = 20
-   env.Y = 30
    stage ('test'){
    print X
    }
@@ -10,5 +17,6 @@ node ('slave') {
    }
    stage('compile'){
    sh 'echo y -${Y}'
+   sample()
    }
 }
