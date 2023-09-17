@@ -19,9 +19,8 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                echo 'Hello World'
+                echooo 'Hello World'
             }
         }
-
     }
 }
