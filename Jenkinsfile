@@ -7,10 +7,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
+    }
     post {
         always {
             echo 'post'
         }
     }
-
 }
