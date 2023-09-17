@@ -26,6 +26,10 @@ pipeline {
     }
     stages {
         stage('compile') {
+            input {
+                message "Should we continue?"
+                ok "Yes, we should."
+            }
             steps {
                 echo TEST_URL
                 echo SSH
