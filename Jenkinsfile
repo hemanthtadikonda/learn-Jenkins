@@ -7,26 +7,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('test') {
-            steps {
-                echo 'Hello World'
-            }
+    post {
+        always {
+            echo 'post'
         }
-        stage('code security') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('release') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-
+    }
     }
 }
