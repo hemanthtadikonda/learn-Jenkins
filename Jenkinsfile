@@ -26,9 +26,23 @@ pipeline {
     }
     stages {
         stage('compile') {
+            when {
+                branch 'production'
+            }
             input {
                 message "Should we continue?"
                 ok "Yes, we should."
+            }
+            steps {
+                echo TEST_URL
+                echo SSH
+                sh 'env'
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            when {
+                branch 'test'
             }
             steps {
                 echo TEST_URL
