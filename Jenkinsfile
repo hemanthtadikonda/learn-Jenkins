@@ -21,12 +21,14 @@ pipeline {
     triggers {
         pollSCM('*/1 * * * *')
     }
+
     stages {
         stage('compile') {
             steps {
                 echo TEST_URL
                 echo SSH
                 sh 'env'
+                sh 'maven --version'
             }
         }
     }
