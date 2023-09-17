@@ -19,7 +19,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                echooo 'Hello World'
+                echo 'Hello World'
             }
         }
     }
