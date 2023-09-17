@@ -9,6 +9,7 @@ pipeline {
             steps {
                 echo TEST_URL
                 echo SSH
+                sh 'env'
             }
         }
     }
