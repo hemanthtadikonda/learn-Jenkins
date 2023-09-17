@@ -40,7 +40,7 @@ pipeline {
                 sh 'mvn --version'
             }
         }
-        stage('compile') {
+        stage('compile code') {
             when {
                 branch 'test'
             }
