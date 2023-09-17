@@ -8,6 +8,7 @@ pipeline {
         stage('compile') {
             steps {
                 echo TEST_URL
+                echo SSH
             }
         }
     }
