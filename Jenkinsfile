@@ -5,9 +5,6 @@ def sample(){
    print "XYZ function"
 }
 
-
-
-
 node ('slave') {
    if ( X > 10 ) {
       stage ('test'){
