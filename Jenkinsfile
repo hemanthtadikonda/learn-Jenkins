@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        URL = "google.com"
+        TEST_URL = "google.com"
     }
     stages {
         stage('compile') {
