@@ -1,6 +1,6 @@
 node ('slave') {
-   def x: integer =10
+   def X = 10
    stage ('test'){
-   print x
+   print X
    }
 }
