@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { node { label 'slave'} }
     environment {
         TEST_URL = "google.com"
         SSH = credentials('centos-ssh')
