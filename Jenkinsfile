@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('compile') {
             steps {
-                echo URL
+                echo TEST_URL
             }
         }
     }
