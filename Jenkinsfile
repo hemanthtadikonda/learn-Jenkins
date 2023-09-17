@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        URL = 'google.com'
+        URL = "google.com"
     }
     stages {
         stage('compile') {
             steps {
-                echo 'URL'
+                echo URL
             }
         }
     }
