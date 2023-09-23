@@ -34,6 +34,9 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        when {
+            expression { env.PASSWORD == admin }
+        }
         stage('release') {
             steps {
                 echo 'Hello World'
