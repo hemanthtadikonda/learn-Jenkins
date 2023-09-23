@@ -34,7 +34,7 @@ pipeline {
             }
         }
         when {
-            expression { ${params.PASSWORD} == admin }
+            expression { env.${params.PASSWORD} == admin }
         }
         stage('release') {
             steps {
