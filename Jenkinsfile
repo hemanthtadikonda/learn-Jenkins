@@ -1,4 +1,4 @@
-node ('any') {
+node  {
     stage('compile code'){
         print 'ok'
     }
