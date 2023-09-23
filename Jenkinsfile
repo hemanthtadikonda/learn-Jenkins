@@ -16,6 +16,7 @@ pipeline {
         stage('compile') {
             steps {
                 echo 'Hello World'
+                sh 'env'
             }
         }
         stage('test') {
@@ -32,9 +33,6 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
-        }
-        when {
-            expression { env.${params.PASSWORD} ==~ "admin" }
         }
         stage('release') {
             steps {
