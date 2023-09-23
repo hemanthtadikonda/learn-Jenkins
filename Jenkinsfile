@@ -20,6 +20,9 @@ node  {
             print 'KO'
         }
     }
+    when {
+        expression { env.BRANCH_NAME == "main" }
+    }
     stage('code security'){
         print 'ok'
     }
