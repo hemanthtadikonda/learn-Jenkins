@@ -1,6 +1,9 @@
-def x = 5
+def x = 6
 
 node  {
+    parameters {
+        password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
+    }
     stage('compile code'){
         print 'ok'
     }
