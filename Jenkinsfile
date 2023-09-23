@@ -1,4 +1,4 @@
-def x = 20
+def x = 5
 
 node  {
     stage('compile code'){
