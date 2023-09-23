@@ -12,6 +12,10 @@ node  {
         stage('code quality'){
             print 'ok'
         }
+    }else {
+        stage('sample'){
+            print 'KO'
+        }
     }
     stage('code security'){
         print 'ok'
